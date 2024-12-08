@@ -18,9 +18,9 @@ def  generate_password():
 
             random_letters = random.choices(letters, k=nr_of_letters)
             random_numbers = random.choices(numbers, k=nr_of_numbers)
-            random_chars = random.choices(symbols, k=nr_of_symbols)
+            random_symbols = random.choices(symbols, k=nr_of_symbols)
 
-            password = random_letters +  list(map(str, random_numbers)) + random_chars
+            password = random_letters +  list(map(str, random_numbers)) + random_symbols
             random.shuffle(password)
             password = ''.join(password)
             print(password)
